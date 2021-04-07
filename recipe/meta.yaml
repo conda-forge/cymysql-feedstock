@@ -1,5 +1,5 @@
 {% set name = "cymysql" %}
-{% set version = "0.9.15" %}
+{% set version = "0.9.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f5d1285f5434421aed25ff4159151a649d165645d07cbed4ca26927022a13b7
+  sha256: c9e475d26daf17eb988333c97da2dc11a4932bd4afd9eb210d2c8b2f43df130e
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . -vv '
   skip: true  # [win and vc<14]
 
